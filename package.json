@@ -1,0 +1,23 @@
+{
+  "name": "on-air-dudes",
+  "version": "1.0.0",
+  "description": "Show on-air box statuses on led-dudes box",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/benkrejci/on-air-dudes",
+  "author": "benkrejci",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "@benkrejci/led-dudes": "^1.0.1",
+    "@benkrejci/on-air": "^1.1.1",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.6.0",
+    "typescript": "^4.3.5"
+  }
+}
