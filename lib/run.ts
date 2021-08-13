@@ -3,7 +3,6 @@ import path from 'path'
 import YAML from 'yaml'
 import * as OnAir from '@benkrejci/on-air'
 import * as LedDudes from '@benkrejci/led-dudes'
-import { config } from 'process'
 import { Rgb } from '@benkrejci/led-dudes'
 
 // led-dudes
@@ -69,9 +68,8 @@ const onAirStatusToRgb = (status: string): Rgb => {
 }
 
 let outputFunctionInterval: NodeJS.Timeout | null = null
-
-// when remote on-air status is updated
-service.on('outputStatus.update', (status: string) => {
+const updateStatus = (status: string) => {
+  console.log(`Service reported output status changed to ${status}`)
   // if status is the default status (off) resume normal led-dudes operation
   if (status === onAirConfig.defaultStatus) {
     ledDudes.resume()
@@ -79,10 +77,17 @@ service.on('outputStatus.update', (status: string) => {
       clearInterval(outputFunctionInterval)
     }
   } else {
-    // otherwise, set up the output function loop and start updating pixels
+    // otherwise, pause schedule and set up the output function loop to start updating pixels
     ledDudes.pause()
+    if (outputFunctionInterval !== null) {
+      clearInterval(outputFunctionInterval)
+    }
     outputFunctionInterval = setInterval(() => {
       ledDudes.setAllPixels(onAirStatusToRgb(status))
     }, 0)
   }
-})
+}
+
+// when remote on-air status is updated
+service.on('outputStatus.update', updateStatus)
+updateStatus(service.getOutputStatus())
