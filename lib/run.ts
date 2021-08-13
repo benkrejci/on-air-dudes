@@ -39,7 +39,7 @@ try {
   console.error(`Error parsing on-air config file ${onAirConfigPath}:`, error)
   process.exit(0)
 }
-let ledDudesConfig: LedDudes.ManagerConfig
+let ledDudesConfig: LedDudes.Config
 try {
   ledDudesConfig = YAML.parse(fs.readFileSync(ledDudesConfigPath, 'utf8'))
 } catch (error) {
