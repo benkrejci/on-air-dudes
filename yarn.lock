@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@benkrejci/led-dudes@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@benkrejci/led-dudes/-/led-dudes-1.0.1.tgz#1da5a2f0b479142e32b1c6ecb0ae7e393301749d"
-  integrity sha512-q58FYocdk/eZWHQHDcNrr9xnfA03CpvhtfyXVWG+PORhLm6vI9LWjIPgYtN5ey7Tb0RgUK9Ine3/vPnE9shj8A==
+"@benkrejci/led-dudes@^1.1.1":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@benkrejci/led-dudes/-/led-dudes-1.1.2.tgz#b6b07ae8517593f92099030116298e03c12ee634"
+  integrity sha512-AqT7Vyi7iiQo7rr/jYav8dtYM+Inc8arB4FKS/NRusGOXqQXapdYcZZ1W+c81LC1eGIrUobtt0xEHhKZd7i6FQ==
   dependencies:
     dotstar "^1.0.0"
     lodash "^4.17.20"
@@ -15,21 +15,21 @@
     yaml "^1.10.0"
     yargs "^16.0.3"
 
-"@benkrejci/on-air@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@benkrejci/on-air/-/on-air-1.1.1.tgz#42eb316a3b09bf38f3661e37a0b90c7e31a155d3"
-  integrity sha512-n4PVPfqrTisn1x+GEq5t+nCS9Or4O+03vxYqvJi2MdOAXOC5I9KGIS60EFGhOmY0dZEE3uBqYjFzTpuWp9Dc/w==
+"@benkrejci/on-air@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@benkrejci/on-air/-/on-air-1.1.2.tgz#a8ef54c011e6f9cc60941154ca4e093ae76ba066"
+  integrity sha512-srGpEqtVtplj//AqbWnmiIdkSsxgKPy2Uj44Fcz27YdJiUyfU4ywnMqG4FA3IuuBmBwCVlkuJTrUX+YcNR+zFw==
   dependencies:
-    axios "^0.20.0"
+    axios "^0.21.1"
     bh1750_lux "^1.0.1"
     bonjour "^3.5.0"
-    debounce "^1.2.0"
+    debounce "^1.2.1"
     express "^4.17.1"
-    lodash "^4.17.20"
-    pigpio "^3.2.3"
-    typescript "^4.0.2"
+    lodash "^4.17.21"
+    pigpio "^3.3.1"
+    typescript "^4.3.5"
     typescript-json-validator "^2.4.2"
-    yaml "^1.10.0"
+    yaml "^1.10.2"
 
 "@cronvel/get-pixels@^3.4.0":
   version "3.4.0"
@@ -132,10 +132,10 @@ array-flatten@^2.1.0:
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-2.1.2.tgz#24ef80a28c1a893617e2149b0c6d0d788293b099"
   integrity sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==
 
-axios@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.20.0.tgz#057ba30f04884694993a8cd07fa394cff11c50bd"
-  integrity sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
     follow-redirects "^1.10.0"
 
@@ -327,7 +327,7 @@ cwise-compiler@^1.1.2:
   dependencies:
     uniq "^1.0.0"
 
-debounce@^1.2.0:
+debounce@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
   integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
@@ -736,7 +736,7 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
-lodash@^4.17.20:
+lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -947,7 +947,7 @@ pi-spi@^1.2.1:
   dependencies:
     nan "^2.14.0"
 
-pigpio@^3.2.3:
+pigpio@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/pigpio/-/pigpio-3.3.1.tgz#fc31885ea2bfb335cccb80b9d78b443fcfe56b90"
   integrity sha512-z7J55K14IwWkA+oW5JHzWcgwThFAuJ7IzV3A2//yRm4jJ2DTU0DHIy91DB0siOi12rvvlrIhRetEuAo0ztF/vQ==
@@ -1253,7 +1253,7 @@ typescript@^3.5.1:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
-typescript@^4.0.2, typescript@^4.3.5:
+typescript@^4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==

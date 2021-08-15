@@ -69,12 +69,12 @@ const onAirStatusToRgb = (status: string): Rgb => {
 
 let outputFunctionInterval: NodeJS.Timeout | null = null
 const updateStatus = (status: string) => {
-  console.log(`Service reported output status changed to ${status}`)
   // if status is the default status (off) resume normal led-dudes operation
   if (status === onAirConfig.defaultStatus) {
     ledDudes.resume()
     if (outputFunctionInterval !== null) {
       clearInterval(outputFunctionInterval)
+      outputFunctionInterval = null
     }
   } else {
     // otherwise, pause schedule and set up the output function loop to start updating pixels

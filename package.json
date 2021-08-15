@@ -12,8 +12,8 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
-    "@benkrejci/led-dudes": "^1.0.1",
-    "@benkrejci/on-air": "^1.1.1",
+    "@benkrejci/led-dudes": "^1.1.1",
+    "@benkrejci/on-air": "^1.1.2",
     "yaml": "^1.10.2"
   },
   "devDependencies": {
