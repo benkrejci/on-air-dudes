@@ -1,6 +1,6 @@
 {
   "name": "@benkrejci/on-air-dudes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Show on-air box statuses on led-dudes box",
   "main": "dist/run.js",
   "types": "dist/run.d.ts",
